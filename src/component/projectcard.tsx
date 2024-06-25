@@ -1,6 +1,5 @@
 import './../Globle.css'
 const {BASE_URL} = import.meta.env
-import diceimg from '/Diceicon.png'
 
 interface projectcardType {
     imgurl: string,
