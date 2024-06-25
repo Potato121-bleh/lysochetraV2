@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faChevronLeft} from "@fortawesome/free-solid-svg-icons";
+const {BASE_URL} = import.meta.env
 
 export default function Contact(){
     let [Telegram, setTelegram] = useState<string>()
@@ -52,9 +53,9 @@ export default function Contact(){
         </div>
         <ul className="CON-content-con" >
             <li className="CON-content1-con" >
-                <div className="CON-img-con" ><img onClick={handletelegram} id="CON-img" src="/Telegramlogonobg.png" /></div>
-                <div className="CON-img-con" ><img onClick={handlemail} id="CON-img" src="/maillogonobg.png" /></div>
-                <div className="CON-img-con" ><img onClick={handlephone} id="CON-img" src="/phonelogonobg.png" /></div>
+                <div className="CON-img-con" ><img onClick={handletelegram} id="CON-img" src={`${BASE_URL}Telegramlogonobg.png`} /></div>
+                <div className="CON-img-con" ><img onClick={handlemail} id="CON-img" src={`${BASE_URL}maillogonobg.png`} /></div>
+                <div className="CON-img-con" ><img onClick={handlephone} id="CON-img" src={`${BASE_URL}phonelogonobg.png`} /></div>
             </li>
                 <div className='CON-leftarrow-icon' >      
                     <FontAwesomeIcon className={`${Ctrlbtnleft}`} onClick={handlebackward} id='journey-rightarrow-icon' icon={faChevronLeft} ></FontAwesomeIcon>

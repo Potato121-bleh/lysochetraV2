@@ -95,6 +95,7 @@ body {
   top:0;
   left:-250px;
   transition: all 1.1s ease-in-out;
+  z-index: 3;
 }
 .menu-text {
   font-size: 15px;

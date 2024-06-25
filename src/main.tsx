@@ -6,6 +6,8 @@ import Journey from './Journey.tsx'
 import Achievement from './Achievement2.tsx'
 import Contact from './Contact.tsx'
 
+
+
 ReactDOM.createRoot(document.getElementById('page1')!).render(
     <Home />
 )

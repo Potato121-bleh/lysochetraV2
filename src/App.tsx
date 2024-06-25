@@ -3,6 +3,7 @@ import Projectcard from "./component/projectcard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from 'react';
+const {BASE_URL} = import.meta.env
 
 let translateCounter: number = 0;
 let translatevalue: number = 0;
@@ -64,7 +65,7 @@ function Home(){
       <div className={`abs-menu ${Menu}`} >
         <div className='menu-top' >
           <h1 onClick={handlemenuback} id='X'>X</h1>
-          <div><img id='traprofile' src='/traprofile_icon.png' ></img></div>
+          <div><img id='traprofile' src={`${BASE_URL}traprofile_icon.png`} ></img></div>
         </div>
         <div className='menu-text' >
           <h4>Hi! My name is</h4>
@@ -99,7 +100,7 @@ function Home(){
         {/* DICE GAME */}
       <div className='project-personal-con' >
         <Projectcard
-    imgurl='/Diceicon.png'
+    imgurl='Diceicon.png'
     title='Dice Game'
     subtitle="After a long day of work why don't you have some fun?"
     btn_url='https://potato121-bleh.github.io/Piggame/Pig.html'
@@ -111,7 +112,7 @@ function Home(){
     {/* ACLEDA CLONE */}
       <div className='project-personal-con' >
       <Projectcard
-    imgurl='/acleda_logonew-removebg-preview.png'
+    imgurl='acleda_logonew-removebg-preview.png'
     title='ACLEDAclone'
     subtitle="ACLEDA website is a complex website But how much it cost to clone one?"
     btn_url=''
@@ -123,7 +124,7 @@ function Home(){
       {/* CALCULATOR */}
       <div className='project-personal-con'>
       <Projectcard
-    imgurl='/Calculatoricon.png'
+    imgurl='Calculatoricon.png'
     title='Calculator'
     subtitle="Calculate normal number seem boring... let try Binary!!"
     btn_url='https://potato121-bleh.github.io/Conversion/'
@@ -135,7 +136,7 @@ function Home(){
       {/* DRINK MENU */}
       <div className='project-personal-con'>
       <Projectcard
-    imgurl='/drinkicon.png'
+    imgurl='drinkicon.png'
     title='Drink Menu'
     subtitle="Why we still using paper menu? cutting down tree is kinda sad:("
     btn_url='https://maritacafe.vercel.app/'
@@ -147,7 +148,7 @@ function Home(){
       {/* TO DO LIST */}
       <div className='project-personal-con'>
       <Projectcard
-    imgurl='/To-do-listicon.png'
+    imgurl='To-do-listicon.png'
     title='To Do List'
     subtitle="Wake up and don't even know what to do? Create your own To-do-list"
     btn_url='https://todo-list-three-hazel.vercel.app/'

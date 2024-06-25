@@ -1,4 +1,5 @@
 import './../Globle.css'
+const {BASE_URL} = import.meta.env
 
 interface projectcardType {
     imgurl: string,
@@ -16,7 +17,7 @@ function Projectcard({imgurl, title, subtitle, btn_url, colorbg, btn_color}: pro
 
     return(<>
     <div className={`projectcard-main-con ${colorbg} `} >
-            <img id="project-img" width={40} height={40} src={imgurl} alt="This is an icon img of card"></img>
+            <img id="project-img" width={40} height={40} src={`${BASE_URL}${imgurl}`} alt="This is an icon img of card"></img>
         <div className="projectcard-text-con" >
             <h2>{title}</h2>
             <h5>{subtitle}</h5><br/>

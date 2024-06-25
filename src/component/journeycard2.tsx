@@ -1,4 +1,4 @@
-
+const {BASE_URL} = import.meta.env
 
 
 interface Journeycard2Type {
@@ -16,7 +16,7 @@ export default function Journeycard2({img_url, title, subtitle, info}:Journeycar
     <li className='journeybody-leftcon' >
                 <ul className='journeybody-left-contentcon' >
                     <li>
-                        <img id='htmlbody' src={img_url} alt='This is an html img' />
+                        <img id='htmlbody' src={`${BASE_URL}${img_url}`} alt='This is an html img' />
                     </li>
                     <li className="journeybody-left-text" >
                         <h1>{title}</h1>
