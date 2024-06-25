@@ -153,11 +153,11 @@ export default function Journey(){
 
                 <ul className='journey-header-rightcon-icon'>
                     <div className='JH-icon-con-personal'><img className='journey-header-icon-child' src={`${BASE_URL}htmlnobg.png`} id='html'/></div>
-                    <li><img className='journey-header-icon-child' src={`${BASE_URL}cssnobg.png`} id='css' /></li>
-                    <li><img className='journey-header-icon-child' src={`${BASE_URL}javascript-no-bg.png`} id='js' /></li>
-                    <li><img className='journey-header-icon-child' src={`${BASE_URL}reactnobg.png`} id='react' /></li>
-                    <li><img className='journey-header-icon-child' src={`${BASE_URL}nextjs-no-bg.png`} id='nextjs' /></li>
-                    <li><img className='journey-header-icon-child' src={`${BASE_URL}typescriptnobg.png`} id='ts' /></li>
+                    <li><img className='journey-header-icon-child' src={`cssnobg.png`} id='css' /></li>
+                    <li><img className='journey-header-icon-child' src={`javascript-no-bg.png`} id='js' /></li>
+                    <li><img className='journey-header-icon-child' src={`reactnobg.png`} id='react' /></li>
+                    <li><img className='journey-header-icon-child' src={`nextjs-no-bg.png`} id='nextjs' /></li>
+                    <li><img className='journey-header-icon-child' src={`typescriptnobg.png`} id='ts' /></li>
                 </ul>
             </li>
 
